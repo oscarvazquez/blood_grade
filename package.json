@@ -1,0 +1,11 @@
+{
+  "name": "Orders_Customers",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "latest",
+    "express": "~4.2.0",
+    "moment": "^2.10.3",
+    "mongoose": "latest",
+    "validate.js": "^0.8.0"
+  }
+}

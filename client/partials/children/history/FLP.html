@@ -1,0 +1,6 @@
+<div class = 'menu'>
+<ul>
+<a ng-repeat = 'results in FLPList' ui-sref="app.history.FLP.results({results: results.name})" ui-sref-active = 'active'>{{results.name}}</a>
+<div ui-view = 'main'></div>
+</ul>
+</div>

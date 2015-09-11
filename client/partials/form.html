@@ -1,0 +1,14 @@
+<div class="row">
+<!--     <div class="col-sm-8 col-sm-offset-2">
+ -->
+ 	<div class = 'col-lg-8'></div>
+    <div class = 'col-lg-4'>
+        <h3>Login</h3>
+                <label for = "email">Email</label>
+                <input class = 'form-control' type = "text" name = "email" ng-model = "existing_user.email">
+                <label for = "LDL">Password</label>
+                <input class = 'form-control' type = "password" name = "password" ng-model = "existing_user.password">
+                <input type = "submit" class = "btn btn-primary" ng-click = 'login()'>
+            <button ui-sref = 'registration.profile' class = 'btn btn-primary'>Register</button>
+    </div>
+</div>

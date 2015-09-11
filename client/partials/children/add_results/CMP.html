@@ -1,0 +1,39 @@
+<div class = 'row'>
+	<div class = 'col-lg-6'>
+		<div id = 'form-info' ui-view = 'main'></div>
+	</div>
+	<div class = 'col-lg-6'>
+		{{current_user.user_name}}
+		<h3>Add your Comprehensive Metabolic Panel Results (CMP)</h3>
+			<label for = "albumin">albumin</label>
+			<input class = 'form-control' type = "text" name = "albumin" ng-model = "new_resultsCMP.albumin" ui-sref = "app.add_results.CMP.results({results: 'albumin'})">
+			<label for = "alp">alp</label>
+			<input class = 'form-control' type = "text" name = "alp" ng-model = "new_resultsCMP.alp" ui-sref = "app.add_results.CMP.results({results: 'alp'})">
+			<label for = "alt">alt</label>
+			<input class = 'form-control' type = "text" name = "alt" ng-model = "new_resultsCMP.alt" ui-sref = "app.add_results.CMP.results({results: 'alt'})">
+			<label for = "ast">ast</label>
+			<input class = 'form-control' type = "text" name = "ast" ng-model = "new_resultsCMP.ast" ui-sref = "app.add_results.CMP.results({results: 'ast'})">
+			<label for = "bilirubin">bilirubun</label>
+			<input class = 'form-control' type = "text" name = "bilirubin" ng-model = "new_resultsCMP.bilirubin" ui-sref = "app.add_results.CMP.results({results: 'bilirubin'})">
+			<label for = "bun">bun</label>
+			<input class = 'form-control' type = "text" name = "bun" ng-model = "new_resultsCMP.bun" ui-sref = 'app.add_results.CMP.results.({results: bun})'>
+			<label for = "calcium">calcium</label>
+			<input class = 'form-control' type = "text" name = "calcium" ng-model = "new_resultsCMP.calcium" ui-sref = "app.add_results.CMP.results({results: 'calcium'})">
+			<label for = "carbon">carbon</label>
+			<input class = 'form-control' type = "text" name = "carbon" ng-model = "new_resultsCMP.carbon" ui-sref = "app.add_results.CMP.results({results: 'carbon'})">
+			<label for = "chloride">chloride</label>
+			<input class = 'form-control' type = "text" name = "chloride" ng-model = "new_resultsCMP.chloride" ui-sref = "app.add_results.CMP.results({results: 'chloride'})">
+			<label for = "creatinine">creatinine</label>
+			<input class = 'form-control' type = "text" name = "creatinine" ng-model = "new_resultsCMP.creatinine" ui-sref = "app.add_results.CMP.results({results: 'creatinine'})">
+			<label for = "glucose">glucose</label>
+			<input class = 'form-control' type = "text" name = "glucose" ng-model = "new_resultsCMP.glucose" ui-sref = "app.add_results.CMP.results({results: 'glucose'})">
+			<label for = "potassium">potassium</label>
+			<input class = 'form-control' type = "text" name = "potassium" ng-model = "new_resultsCMP.potassium" ui-sref = "app.add_results.CMP.results({results: 'potassium'})">
+			<label for = "sodium">sodium</label>
+			<input class = 'form-control' type = "text" name = "sodium" ng-model = "new_resultsCMP.sodium" ui-sref = "app.add_results.CMP.results({results: 'sodium'})">
+			<label for = "total_protein">Total Protein</label>
+			<input class = 'form-control' type = "text" name = "total_protein" ng-model = "new_resultsCMP.total_protein" ui-sref = "app.add_results.CMP.results({results: 'total_protein'})">
+			<input type = 'hidden' name = 'user_name' ng-model = 'new_resultsCMP.userID' value = 'current_user._id'>
+			<input type = "submit" class = "btn btn-primary" ng-click = 'addResultCMP()'>
+	</div>
+</div>

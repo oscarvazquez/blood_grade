@@ -1,0 +1,13 @@
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
+
+var FLPSchema = new mongoose.Schema({
+	hdl: Number, 
+	ldl: Number,
+	total_cholesterol: Number,
+	Triglycerides: Number,
+	created_at: {type: Date, default: new Date()},
+	_user: { type:Schema.ObjectId, ref: "user"}
+
+})
+module.exports = mongoose.model('FLP_result', FLPSchema);

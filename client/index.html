@@ -1,0 +1,89 @@
+<!doctype html>
+<html ng-app = 'app'>
+<head>
+	
+	<title>BloodGrade</title>
+	<meta charset="utf-8">
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"/></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script> 
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.1/ui-bootstrap-tpls.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-animate.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="assets/demo.css">
+	<link rel="stylesheet" href="assets/sidebar-left.css">
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="assets/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="assets/demo5.css" />
+		<link rel="stylesheet" type="text/css" href="assets/component.css" />
+		<script type="text/javascript" src="partials/0636920026938/d3/d3.v3.js"></script>
+
+        <script src="http://code.highcharts.com/highcharts.js"></script>
+        <script src="http://code.highcharts.com/modules/exporting.js"></script>
+		<script src = "http://d3js.org/d3.v3.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+		<script src="node_modules/datamaps/dist/datamaps.world.min.js"></script>
+   		
+
+<script src='app.js'></script>
+<script src = 'controllers/addFLPController.js'></script>
+<script src = 'controllers/CMPController.js'></script>
+<script src = 'controllers/FLPController.js'></script>
+<script src = 'factories/add_resultsFactory.js'></script>
+<script src = 'controllers/userController.js'></script>
+<script src = 'factories/userFactory.js'></script>
+<script src = 'controllers/main_dashController.js'></script>
+<script src = 'controllers/mapController.js'></script>
+<script src = 'controllers/historyController.js'></script>
+   <style>
+   		#logout {
+   			float: right;
+   			text-align: top;
+   		}
+   		#header {
+   			margin-bottom: 100px;
+   		}
+   		#content {
+   			width: 100%;
+/*   			background-color: black;
+*/   			height: 500px;
+   		}
+   		#content-nav-bar{
+   			color: blue;
+   		}
+
+   	</style>
+</head>
+<body>
+<div ui-view = 'login'>	
+	<div class = 'row'>
+	    <div class = "col-lg-1"></div>
+	    <div class = "col-lg-9">
+	    	<div id = 'header' ui-view = 'header'><div>
+	    </div>
+	    <div class = 'col-lg-2'></div>
+	</div>
+	<div class = 'row'>
+		<div class = 'col-lg-1'>
+			<div ui-view = 'side-bar'></div>
+		</div>
+	    <div class = 'col-lg-11'>
+	    	<div id = 'content' ui-view = 'content'></div>
+		</div>
+	</div>
+
+</div>
+</body>

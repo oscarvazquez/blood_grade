@@ -1,0 +1,6 @@
+<div class = 'menu'>
+<ul>
+<a ng-repeat = 'results in CMPList' ui-sref="app.history.CMP.results({results: results.name})" ui-sref-active = 'active'>{{results.name}}</a>
+</ul>
+</div>
+<div ui-view = 'main'></div>

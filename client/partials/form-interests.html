@@ -1,0 +1,62 @@
+<label>More User Info</label>
+            <div class = 'row'>
+              <div class = 'col-lg-2'></div>
+              <div class = 'col-lg-8'>
+<div class="form-group" style = 'color: white'>
+    <div class="radio" style = 'color: white'>
+    	<h5>Sex</h3>
+        <label style = 'color: white'>
+           <input type="radio" ng-model="formData.sex" value="male" checked>
+           Male
+        </label>
+    </div>
+    <div class="radio">
+        <label style = 'color: white'>
+            <input style = 'color: white' type="radio" ng-model="formData.sex" value="female">
+            Female
+        </label>
+    </div>
+</div>
+
+<div class="form-group">
+    <div class="radio" style = 'color: white'>
+    	<h5>Smoker</h5>
+        <label>
+           <input type="radio" ng-model="formData.smoke" value="yes" checked>
+           Yes
+        </label>
+    </div>
+    <div class="radio" style = 'color: white'>
+        <label>
+            <input type="radio" ng-model="formData.smoke" value="no">
+            No
+        </label>
+    </div>
+</div>
+<div class="form-group">
+    <label style = 'color: white'for="blood-type">Blood Type</label>
+    <select type="text" class="form-control" name="blood-type" ng-model="formData.blood_type">
+    	<option value="O+">O positive</option>
+		<option value="O-">O negative</option>
+		<option value="A+">A positive</option>
+		<option value="A-">A negative</option>
+		<option value="B+">B positive</option>
+		<option value="B-">B negative</option>
+		<option value="AB+">AB positive</option>
+		<option value="AB-">AB negative</option>
+	</select>
+</div>
+
+<div class="form-group">
+    <label style = 'color: white'for="description">Any Pre-Existing Conditions?</label>
+    <textarea type="text" class="form-control" name="description" ng-model="formData.description"></textarea>
+</div>
+
+
+<div class="form-group row">
+<div class="col-xs-6 col-xs-offset-3">
+    <a ui-sref="registration.payment" class="btn btn-block btn-info">
+    Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
+    </a>
+</div>
+</div>

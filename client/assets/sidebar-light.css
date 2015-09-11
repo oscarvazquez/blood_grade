@@ -1,0 +1,124 @@
+/* Giving the page a width */
+
+section {
+	max-width: 960px;
+	padding:0 20px;
+	margin: 0 auto;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+/* The main content */
+
+.main-content {
+	font-family: Arial, Helvetica, sans-serif;
+	width: 520px;
+	float: left;
+}
+
+/* The sidebar */
+
+.sidebar-light {
+	font-family: Arial, Helvetica, sans-serif;
+	float: right;
+	width: 280px;
+}
+
+.sidebar-light .company-info {
+	background-color: #F1F4F6;
+	margin-bottom: 30px;
+	padding: 35px 0;
+}
+
+.sidebar-light .company-info h3 {
+	color:  #4E5255;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0 0 25px;
+	padding: 0 40px;
+}
+
+.sidebar-light .company-info p {
+	color: #636568;
+	font-size: 13px;
+	line-height: 19px;
+	margin: 0 0 30px;
+	padding: 0 40px;
+}
+
+.sidebar-light .company-info .social-buttons {
+	padding: 0 40px;
+}
+
+.sidebar-light .company-info .social-buttons .fa {
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 1.7;
+	background-color: #7B858F;
+	width: 34px;
+	height: 34px;
+}
+
+.sidebar-light .latest-blog-posts {
+	background-color: #F1F4F6;
+}
+
+.sidebar-light .latest-blog-posts h3 {
+	background-color: #7B858F;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+	padding: 20px 30px;
+	text-align: left;
+	color:  #ffffff;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0;
+}
+
+.sidebar-light .latest-blog-posts .element-title .fa {
+	margin-right: 15px;
+}
+
+.sidebar-light .latest-blog-posts ul {
+	list-style: none;
+	margin: 0;
+	text-align: left;
+	padding: 30px 40px;
+}
+
+.sidebar-light .latest-blog-posts ul li {
+	line-height: 1.2;
+	margin: 0 0 14px;
+}
+
+.sidebar-light .latest-blog-posts ul li a {
+	font-size: 13px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #4F5255;
+}
+
+.sidebar-light .latest-blog-posts ul li span {
+	color: #92999F;
+	font-size: 11px;
+	display: block;
+	margin-top:4px;
+}
+
+/* Making the sidebar responsive */
+
+@media (max-width: 900px) {
+
+	.main-content {
+		float:none;
+		width: auto;
+		margin-bottom: 40px;
+	}
+
+	.sidebar-light {
+		float: none;
+		width: auto;
+	}
+
+}

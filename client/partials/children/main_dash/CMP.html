@@ -1,0 +1,44 @@
+<label for = 'filter'>Filter:</label>
+<input name = 'filter' type = "text" class = "form-control" ng-model = "filter_name">
+<div class="component">
+				<table>
+					<thead>
+						<tr>
+							<th>Date</th>
+							<th>Albumin</th>
+							<th>Alp</th>
+							<th>Alt</th>
+							<th>Ast</th>
+							<th>Bilirubin</th>
+							<th>Bun</th>
+							<th>Calcium</th>
+							<th>Carbon</th>
+							<th>Chloride</th>
+							<th>Creatinine</th>
+							<th>Glucose</th>
+							<th>Potassium</th>
+							<th>Sodium</th>
+							<th>Protein</th>							
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat = 'result in userCMP.results_cmp'>
+							<th>{{result.created_at | date:'MMM dd, yyyy'}}</th>
+							<td>{{result.albumin}}</td>
+							<td>{{result.alp}}</td>
+							<td>{{result.alt}}</td>
+							<td>{{result.ast}}</td>
+							<td>{{result.bilirubin}}</td>
+							<td>{{result.bun}}</td>
+							<td>{{result.calcium}}</td>
+							<td>{{result.carbon}}</td>
+							<td>{{result.chloride}}</td>
+							<td>{{result.creatinine}}</td>
+							<td>{{result.glucose}}</td>
+							<td>{{result.potassium}}</td>
+							<td>{{result.sodium}}</td>
+							<td>{{result.total_protein}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>

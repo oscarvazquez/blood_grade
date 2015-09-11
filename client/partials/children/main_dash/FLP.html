@@ -1,0 +1,24 @@
+<label for = 'filter'>Filter:</label>
+<input name = 'filter' type = "text" class = "form-control" ng-model = "filter_name">
+<div class="component">
+				<table>
+					<thead>
+						<tr>
+							<th>Date</th>
+							<th>HDL</th>
+							<th>LDL</th>
+							<th>Cholesterol</th>
+							<th>Trig</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat = 'result in userFLP.results_flp | filter:filter_name'>
+							<th>{{result.created_at | date:'MMM dd, yyyy'}}</th>
+							<td>{{result.hdl}}</td>
+							<td>{{result.ldl}}</td>
+							<td>{{result.total_cholesterol}}</td>
+							<td>{{result.triglycerides}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>

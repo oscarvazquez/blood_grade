@@ -1,0 +1,241 @@
+/* Giving the page a width */
+
+.page-layout {
+	max-width: 960px;
+	padding: 0 20px;
+	margin: 0 auto;
+	overflow: hidden;
+	box-sizing: border-box;
+
+	display: -webkit-flex;
+	display: flex;
+
+	justify-content: space-between;
+}
+
+/* The main content */
+
+.main-content {
+	font-family: Arial, Helvetica, sans-serif;
+	max-width: 500px;
+	padding-top: 40px;
+	margin-bottom: 40px;
+}
+
+/* The advanced sidebar */
+
+.sidebar-advanced {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #292c2f;
+	width: 280px;
+}
+
+.sidebar-advanced .company-info {
+	background-color:  #292c2f;
+	padding: 35px 0;
+}
+
+.sidebar-advanced .company-info h2 {
+	color:  #ffffff;
+	font-size: 18px;
+	margin: 0 0 25px;
+	padding: 0 40px;
+}
+
+.sidebar-advanced .company-info p {
+	color:  #abb0b5;
+	font-size: 13px;
+	line-height: 1.3;
+	margin-bottom: 30px;
+	padding: 0 40px;
+}
+
+.sidebar-advanced .social-buttons {
+	padding: 0 40px;
+}
+
+.sidebar-advanced .social-buttons .fa {
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 1.7;
+	background-color: #33383b;
+	width: 34px;
+	height: 34px;
+}
+
+.sidebar-advanced .latest-blog-posts,
+.sidebar-advanced .our-newsletter,
+.sidebar-advanced .photo-stream {
+	background-color:  #292c2f;
+}
+
+.sidebar-advanced h3 {
+	background-color:  #2f5377;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+	padding: 20px 30px;
+	text-align: left;
+	color:  #ffffff;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0;
+}
+
+.sidebar-advanced h3 .fa {
+	margin-right: 15px;
+}
+
+/* Latest Blog Posts */
+
+.sidebar-advanced .latest-blog-posts ul {
+	list-style: none;
+	margin: 0;
+	text-align: left;
+	padding: 30px 40px;
+}
+
+.sidebar-advanced .latest-blog-posts ul li {
+	line-height: 1.2;
+	margin: 0 0 14px;
+}
+
+.sidebar-advanced .latest-blog-posts ul li a {
+	font-size: 13px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #fff;
+}
+
+.sidebar-advanced .latest-blog-posts ul li span {
+	color: #92999F;
+	font-size: 11px;
+	display: block;
+	margin-top:4px;
+}
+
+/* Our newsletter */
+
+.sidebar-advanced .our-newsletter form {
+	padding: 30px 40px;
+}
+
+.sidebar-advanced .our-newsletter form p {
+	color:  #ffffff;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 19px;
+	margin:0 0 25px;
+}
+
+.sidebar-advanced .our-newsletter form input[type=email] {
+	border-radius: 2px;
+	background-color:  #3e4144;
+	width: 170px;
+	height: 39px;
+	margin-bottom: 15px;
+	margin-right: 8px;
+	color: #eee;
+	padding: 0 15px;
+	outline: 0;
+	border: none;
+}
+
+.sidebar-advanced .our-newsletter form button {
+	border-radius: 2px;
+	background-color: #2F7756;
+	padding: 13px 16px;
+	outline: 0;
+	border: none;
+	color: #FFF;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 1;
+	cursor: pointer;
+}
+
+/* Photo Stream */
+
+.sidebar-advanced .photo-stream .gallery {
+	padding: 35px 40px;
+	text-align: center;
+}
+
+.sidebar-advanced .photo-stream .gallery img {
+	width: 200px;
+	margin-bottom: 20px;
+}
+
+.sidebar-advanced .pagination {
+	text-align: right;
+	width: 200px;
+	margin: 0 auto;
+	white-space: nowrap;
+}
+
+.sidebar-advanced .pagination span {
+	float: left;
+	color: #FFE;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 36px;
+}
+
+.sidebar-advanced .pagination .previous,
+.sidebar-advanced .pagination .next {
+	display: inline-block;
+	position: relative;
+	border-radius: 2px;
+	background-color:  #33383b;
+	width: 34px;
+	height: 34px;
+}
+
+.sidebar-advanced .pagination .previous:after,
+.sidebar-advanced .pagination .next:after {
+	content: '';
+	position: absolute;
+	top: 12px;
+	left: 14px;
+	width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+}
+
+.sidebar-advanced .pagination .previous:after {
+	border-right: 7px solid #ffffff;
+}
+
+.sidebar-advanced .pagination .next:after {
+	border-left: 7px solid #ffffff;
+}
+
+/* Making the sidebar responsive */
+
+@media (max-width: 900px) {
+
+	.page-layout{
+		flex-flow:column;
+	}
+
+	.main-content{
+		max-width:none;
+	}
+
+	.sidebar-advanced {
+		width: auto;
+	}
+
+	.sidebar-advanced .photo-stream {
+		display: none;
+	}
+}
+
+/*	Removing margins and paddings from the body, so that
+    the sidebar takes the full height of the page */
+
+body{
+	margin: 0;
+	padding: 0;
+}
